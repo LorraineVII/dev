@@ -10,7 +10,7 @@ title: Proiect cu Cookies
   <title>Proiect cu Cookies</title>
   <script>
     allCookies = document.cookie;
-    document.cookie = "name=Oeschger; ssssSameSite=None; Secure";
+    document.cookie = "name=Oeschger; SameSite=None; Secure";
     document.cookie = "favorite_food=tripe; SameSite=None; Secure";
 
 function showCookies() {
@@ -27,5 +27,11 @@ function clearOutputCookies() {
 <body>
   <h1>Bine ai venit la lab</h1>
   <button onclick="alertCookie()">Afișează cookie-urile</button>
+  <button onclick="showCookieValue()">Show cookie value</button>
+  <button onclick="clearOutputCookieValue()">Clear</button>
+  <div>
+    <code id="cookie-value"></code>
+  </div>
+  
 </body>
 </html>
