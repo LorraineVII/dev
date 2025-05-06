@@ -13,6 +13,9 @@ title: Proiect cu Cookies
     document.cookie = "name=Oeschger; SameSite=None; Secure";
     document.cookie = "favorite_food=trippe; SameSite=None; Secure";
 
+    function alertCookie() {
+       alert(document.cookie); } 
+
 function showCookies() {
   const output = document.getElementById("cookies");
   output.textContent = `> ${document.cookie}`;
