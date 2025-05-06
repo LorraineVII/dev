@@ -1,0 +1,26 @@
+---
+layout: minimal
+title: Proiect cu Cookies
+---
+ 
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Proiect cu Cookies</title>
+  <script>
+    // Setarea cookie-urilor
+    document.cookie = "session=test GDPR";
+    document.cookie = "favorite_task=collect Data";
+ 
+    // Funcția care afișează toate cookie-urile
+    function alertCookie() {
+      alert(document.cookie);
+    }
+  </script>
+</head>
+<body>
+  <h1>Bine ai venit la lab</h1>
+  <button onclick="alertCookie()">Afișează cookie-urile</button>
+</body>
+</html>
