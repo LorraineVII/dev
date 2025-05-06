@@ -10,14 +10,18 @@ title: Proiect cu Cookies
   <title>Proiect cu Cookies</title>
   <script>
     allCookies = document.cookie;
-    document.cookie = "cookie 1";
-    document.cookie = "cookie 2";
-    document.cookie = "cookie 3";
- 
-    
-    function alertCookie() {
-      alert(document.cookie);
-    }
+    document.cookie = "name=Oeschger; SameSite=None; Secure";
+    document.cookie = "favorite_food=tripe; SameSite=None; Secure";
+
+function showCookies() {
+  const output = document.getElementById("cookies");
+  output.textContent = `> ${document.cookie}`;
+}
+
+function clearOutputCookies() {
+  const output = document.getElementById("cookies");
+  output.textContent = "";
+}
   </script>
 </head>
 <body>
