@@ -9,11 +9,12 @@ title: Proiect cu Cookies
   <meta charset="UTF-8">
   <title>Proiect cu Cookies</title>
   <script>
-    // Setarea cookie-urilor
+    allCookies = document.cookie;
     document.cookie = "cookie 1";
     document.cookie = "cookie 2";
+    document.cookie = "cookie 3";
  
-    // Funcția care afișează toate cookie-urile
+    
     function alertCookie() {
       alert(document.cookie);
     }
